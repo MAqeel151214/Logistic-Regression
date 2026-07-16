@@ -6,8 +6,9 @@ This repository explores how to build a basic classifier from scratch using `num
 
 ## 📌 Project Overview
 
-This project consists of a single Jupyter Notebook:
-- `Logistic_Regression_(Perceptron_trick).ipynb`: The main notebook demonstrating environment setup, synthetic data generation, mathematical formulation, model training, and performance evaluation.
+This project consists of the following Jupyter Notebooks:
+- `Logistic_Regression_(Perceptron_trick).ipynb`: Demonstrates environment setup, synthetic data generation, mathematical formulation, model training, and performance evaluation using a discrete step function.
+- `Perceptron_trick_using_Sigmoid_Function.ipynb`: Explores the perceptron trick using the continuous Sigmoid function, and compares its decision boundaries and performance metrics against standard Scikit-Learn `LogisticRegression`.
 
 ## 🧮 Mathematical Background
 
@@ -60,8 +61,6 @@ Make sure you have Python installed (3.8+ recommended).
    ```
 
 ## 📊 Future Improvements
-As discussed in Section 8 of the notebook, the current implementation achieves ~72% accuracy due to specific technical limitations. Future improvements could include:
-1. **Implementing True Logistic Regression**: Applying the Sigmoid function and computing the Log-Loss gradient.
-2. **Full Epoch Iteration**: Ensuring the model samples every data point per epoch rather than a single random point.
-3. **Feature Scaling**: Applying `StandardScaler` to ensure all features contribute equally to the gradient updates, leading to faster and more stable convergence.
-# Logistic-Regression
+As discussed in Section 8 of the first notebook, the initial implementation achieves ~72% accuracy due to specific technical limitations. The second notebook addresses some of this by implementing the Sigmoid function, but future improvements could still include:
+1. **Full Epoch Iteration**: Ensuring the model samples every data point per epoch rather than a single random point.
+2. **Feature Scaling**: Applying `StandardScaler` to ensure all features contribute equally to the gradient updates, leading to faster and more stable convergence.
